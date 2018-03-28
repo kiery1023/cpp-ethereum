@@ -239,7 +239,7 @@ int main(int argc, char** argv)
 //  TransactionPriority priority = TransactionPriority::Medium;
 //  double etherPrice = 30.679;
 //  double blockFees = 15.0;
-    u256 askPrice = DefaultGasPrice;
+    u256 askPrice = 0;
     u256 bidPrice = DefaultGasPrice;
     bool alwaysConfirm = true;
 
