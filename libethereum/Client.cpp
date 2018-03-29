@@ -269,6 +269,7 @@ void Client::reopenChain(ChainParams const& _p, WithExisting _we)
     sealEngine()->cancelGeneration();
 
     {
+        setAuthor(_p.author);
         WriteGuard l(x_postSeal);
         WriteGuard l2(x_preSeal);
         WriteGuard l3(x_working);
