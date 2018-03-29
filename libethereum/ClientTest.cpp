@@ -61,7 +61,6 @@ void ClientTest::setChainParams(string const& _genesis)
             BOOST_THROW_EXCEPTION(ChainParamsNotNoProof() << errinfo_comment("Provided configuration is not well formatted."));
 
         reopenChain(params, WithExisting::Kill);
-        completeSync();  // set sync state to idle for mining
     }
     catch (...)
     {
